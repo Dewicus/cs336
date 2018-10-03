@@ -1,0 +1,26 @@
+strong {
+  color: #f00; /* red */
+  background-color: #ddf; /* pale blue */
+  font: 200% serif;
+}
+
+.carrot {
+  color: #fa0; /* orange */
+}
+
+.spinach {
+  color: #080; /* dark green */
+}
+
+p {
+  color: #00f; /* blue */
+}
+
+p::before{
+  content: url("Yellow-pin.png");
+}
+
+body {
+background: url("Blue-rule.png" /*add blue lines*/)
+};
+
