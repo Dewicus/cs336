@@ -1,0 +1,12 @@
+6.1
+
+For some reason head did not work for me or put with the second command. It returned nothing
+
+
+6.2
+
+Forms support all methods
+
+The data seems to not be modified 
+
+Was having issues running my server for some reason. Counsole would stop cooperating after initializing server.js
