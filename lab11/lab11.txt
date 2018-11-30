@@ -1,6 +1,9 @@
 Compare and contrast your development and production deployments and explain how each is designed.
-
+The deployments are designed differently as the production does not permit changing code while db is active.
 
 List the optimizations you’ve configured for this production version and, if possible, find evidence of then in the deployed application files.
+   
+
+https://production11.herokuapp.com/
 
 
