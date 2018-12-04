@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Comment from './comment.js';
+import Comment from './comment';
 
-var CommentList = React.createClass({
-    render: function() {
-        var commentNodes = this.props.data.map(function(comment) {
+module.exports = React.createClass({
+    render: function () {
+        var commentNodes = this.props.data.map(function (comment) {
             return (
                 <Comment id={comment.id} author={comment.author}
                          key={comment.id}>
@@ -14,10 +14,8 @@ var CommentList = React.createClass({
         });
         return (
             <div className="commentList">
-		{commentNodes}
+                {commentNodes}
             </div>
         );
     }
 });
-
-module.exports = CommentList;
