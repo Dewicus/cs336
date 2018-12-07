@@ -94,10 +94,19 @@ app.listen(app.get('port'), function() {
 });
 
 // This assumes that the MongoDB password has been set as an environment variable.
-var mongoURL = 'mongodb://Dewicus:' +
-         process.env.MONGO_PASSWORD +
-           'ds119164.mlab.com:19164/cs336';
-MongoClient.connect(mongoURL, function(err, dbConnection) {
-    if (err) throw err;
-    db = dbConnection;
+MongoClient.connect('mongodb://cs336:' + password + '@ds119164.mlab.com:19164/cs336', function (err, client) {
+  if (err) {
+    throw err
+    }
+
+  db = client.db("cs336");
+  
+  db.collection('labcomments').find().toArray(function (err, result) {
+    if (err) throw er
+        data = result;
+    });
+
+    app.listen(app.get('port'), function() {
+        console.log('Server started: http://localhost:' + app.get('port') + '/');
+    })
 });
