@@ -94,7 +94,7 @@ app.listen(app.get('port'), function() {
 });
 
 // This assumes that the MongoDB password has been set as an environment variable.
-var mongoURL = 'mongodb://cs336:' +
+var mongoURL = 'mongodb://Dewicus:' +
          process.env.MONGO_PASSWORD +
            'ds119164.mlab.com:19164/cs336';
 MongoClient.connect(mongoURL, function(err, dbConnection) {
