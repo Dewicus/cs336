@@ -1,0 +1,21 @@
+What benefit did using the React Router bring to the application?
+This gave us the ability to navigate the app with the history buttons
+
+Which is better, hash history or browser history?
+Depends on the situation but in our case browser.
+
+Why does the server (either Webpack Dev Server or the Express server) have to be modified to support the browser history? Compare this with the hash-based server demonstrated in class, which didn't require such modifications.
+Because otherwise it will leave the application looking for the last address outside of the one you are on
+
+What state does the new CommentEdit component maintain and how does that compare with the state maintained by the CommentBox component?
+CommentEdit maintains the ID of a comment in commentBox
+
+What does the CommentEdit component do when the AJAX PUT or DELETE methods return successfully? How does this compare with what the “Cancel” button provided by the CommentEdit component does?
+It updates the comment, if hit cancel it does not update the component
+
+How is the Link added in the last step different from a simple HTML hyperlink?
+This link takes us through our router using the comment id to edit said comment
+
+https://production11.herokuapp.com/
+
+

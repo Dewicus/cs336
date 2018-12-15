@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>JQuery& JQuery-UI</h1>
+    <input id = "hello" type="submit" value="Get Data"/>
+    <script src="jquery.js"></script>
+    <script>
+ 
+    // Your code goes here.
+    $( document ).ready(function() {
+ 
+    	$("hello").click(function(){
+        	$("<em>", {html: "no data yet..."}).appendTo("body");
+            event.preventDefault();
+    	});
+	});
+
+	//added class and remove class
+	$( "a" ).addClass( "test" );
+	$( "a" ).removeClass( "test" );
+
+	//special effects
+	$( "a" ).click(function( event ) {
+    	event.preventDefault();
+    	$( this ).hide( "slow" );
+	});
+
+
+ 
+    </script>
+</body>
+</html>
